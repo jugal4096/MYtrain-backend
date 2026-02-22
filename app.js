@@ -1,7 +1,7 @@
 import express from "express";
 import { config } from "dotenv";
 import cors from "cors";
-import home from "./routes/home.js";
+import home from "./home.js";
 import gettrain from "./getTrains.js";
 
 config();
@@ -23,4 +23,5 @@ app.use("/trains", gettrain);
 
 app.listen(PORT, () => {
   console.log(`Listening on ${PORT}`);
+
 });
