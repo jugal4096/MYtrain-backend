@@ -1,6 +1,6 @@
 import { Router } from "express";
 import UserAgent from "user-agents";
-import Prettify from "../utils/prettify.js";
+import Prettify from "./prettify.js";
 import * as cheerio from 'cheerio';
 
 const prettify = new Prettify();
@@ -133,6 +133,7 @@ router.get("/pnrstatus",async(req,resp)=>{
   }
 
 })
+
 
 
 export default router;
