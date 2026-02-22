@@ -2,7 +2,7 @@ import express from "express";
 import { config } from "dotenv";
 import cors from "cors";
 import home from "./routes/home.js";
-import gettrain from "./routes/getTrains.js";
+import gettrain from "./getTrains.js";
 
 config();
 
